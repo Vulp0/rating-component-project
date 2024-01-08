@@ -1,38 +1,119 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121417;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  width: 88%;
+  max-width: 500px;
+  height: 50%;
+  max-height: 600px;
+  background-color: #1B222C; 
+  border-radius: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.MenuContainer, .ThankYouContainer {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.StarIcon {
+  background-color: #262F38;
+  width: fit-content;
+  border-radius: 32px;
+  padding: 12px;
 }
+
+.StarIcon img {
+  width: 20px;
+}
+
+.TextBlock {
+  text-align: start;
+}
+
+.TextBlock p {
+  color: #959EAC;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.NumbersContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.NumbersContainer button {
+  border-radius: 32px;
+  font-size: 24px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #262F38;
+  color: #959EAC;
+}
+
+.NumbersContainer button:hover {
+  background-color: #959EAC;
+  color: white;
+  cursor: pointer;
+}
+
+#SubmitBtn {
+  background-color: #959EAC;
+  border: none;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
+#SubmitBtn:hover {
+  cursor: pointer;
+}
+
+#SubmitBtn:active {
+  background-color: white;
+  color: #FB7413;
+}
+
+.ThankYouContainer {
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ThankYouContainer p {
+  color: #959EAC;
+  margin-top: 16px;
+}
+
+.ThanksPic {
+  width: 150px;
+}
+
+.RatingGivenText {
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 32px;
+  background-color: #262F38;
+  color: #FB7413;
+}
+
